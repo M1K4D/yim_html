@@ -74,7 +74,6 @@ html {
 .logo a {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   text-align: left;
   font: normal normal 550 20px/20px Poppins;
   font-size: 30px;
@@ -328,6 +327,15 @@ html {
   color: #212121;
 }
 
+.row-con {
+  width: 100%;
+  /* height: 150px; */
+  margin-top: 55px;
+  display: inline-block;
+  padding: auto;
+  background: #f9f9f9 0% 0% no-repeat padding-box;
+}
+
 .form-inline {
   display: flex;
   flex-flow: row wrap;
@@ -402,6 +410,54 @@ html {
 
 .column-10 ul li {
   display: inline-block;
+}
+
+.col-contact-1 {
+  float: left;
+  width: 50%;
+  padding: auto;
+  align-items: center;
+}
+
+.col-contact-1 a {
+  margin-top: 33px;
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font: normal normal 600 25px/20px Poppins;
+  letter-spacing: 0px;
+  color: #212121;
+  text-decoration: none;
+}
+
+.col-contact-2 {
+  float: left;
+
+  width: 50%;
+  /* height: 120px; */
+}
+
+.col-contact-2 p {
+  margin-left: 250px;
+  text-align: left;
+  font: normal normal 300 17px/17px Poppins;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #212121;
+}
+
+.col-contact-2 p img {
+  height: 12px;
+}
+
+.col-c {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font: normal normal 300 17px/20px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 600px) {
