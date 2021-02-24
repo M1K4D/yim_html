@@ -11,6 +11,7 @@ html {
 }
 
 .main-1 {
+  width: 100%;
   background: url("../images/43010.png") no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -92,10 +93,10 @@ html {
 .column-1 {
   float: left;
   width: 55%;
-  padding-left: 50px;
-  padding-top: 70px;
+  margin-left: 50px;
+  margin-top: 70px;
+  padding: auto;
   height: 100%;
-  /* font-size: 20px; */
 }
 
 .column-1 ul li {
@@ -118,10 +119,15 @@ html {
   width: 45%;
   padding-top: 65px;
   height: 400px;
+  max-width: 500px;
 }
 
 .column-2 ul li {
   list-style-type: none;
+}
+
+.column-2 ul li a {
+  float: left;
 }
 
 .row:after {
@@ -319,14 +325,8 @@ html {
   color: #212121;
 }
 
-/* .card a {
-  background: #212121 0% 0% no-repeat padding-box;
-  border-radius: 34px;
-} */
-
 .row-1 {
-  width: 100%;
-  padding: 50px 100px 10px 225px;
+  margin: 50px 100px 10px 225px;
 }
 
 .card-contact {
@@ -482,7 +482,11 @@ html {
 
 @media screen and (max-width: 1000px) {
   .column-1,
-  .column-2 {
+  .column-2,
+  .column-3,
+  .column-4,
+  .column-5,
+  .column-6 {
     width: 100%;
     text-align: center;
   }
