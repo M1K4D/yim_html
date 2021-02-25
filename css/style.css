@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0px;
   font-family: "Poppins", sans-serif;
 }
 html {
@@ -18,14 +18,17 @@ html {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
+  margin: auto;
+  /* display: flex; */
 }
 
 .topnav {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 60px;
+  height: 65px;
   background: #212121 0% 0% no-repeat padding-box;
+  padding: auto;
   position: fixed;
   opacity: 1;
 }
@@ -33,7 +36,6 @@ html {
 .menu {
   float: right;
   width: 50%;
-  /* position: fixed; */
 }
 
 .menu ul {
@@ -76,45 +78,47 @@ html {
   display: flex;
   align-items: center;
   text-align: left;
-  font: normal normal 550 20px/20px Poppins;
+  font: normal normal 550 20px/0px Poppins;
   font-size: 30px;
   text-decoration: none;
   color: #ffffff;
   margin-top: 5px;
-  padding-left: 80px;
+  margin-left: 80px;
 }
 
-.display-1 {
+.content-1 {
   align-self: center;
   max-width: 1600px;
   margin: auto;
 }
 
-.column-1 {
+.col-1 {
   float: left;
   width: 55%;
-  margin-left: 50px;
-  margin-top: 70px;
-  padding: auto;
+  padding-left: 50px;
+  padding-top: 70px;
   height: 100%;
 }
 
-.column-1 ul li {
+.col-1 ul li {
   list-style-type: none;
+}
+
+.col-1 ul li h3 {
   text-align: left;
-  font: normal normal bold 50px/60px Poppins;
+  font: normal normal bold 50px/0px Poppins;
   letter-spacing: 0px;
   color: #ffdd00;
 }
 
-.column-1 ul li a {
+.col-1 ul li h2 {
   text-align: left;
-  font: normal normal bold 65px/75px Poppins;
+  font: normal normal bold 65px/20px Poppins;
   letter-spacing: 0px;
   color: #ffdd00;
 }
 
-.column-2 {
+.col-2 {
   float: left;
   width: 45%;
   padding-top: 65px;
@@ -122,11 +126,11 @@ html {
   max-width: 500px;
 }
 
-.column-2 ul li {
+.col-2 ul li {
   list-style-type: none;
 }
 
-.column-2 ul li a {
+.col-2 ul li a {
   float: left;
 }
 
@@ -207,12 +211,12 @@ html {
   min-height: 750px;
 }
 
-.column-3 {
+.col-3 {
   float: left;
   width: 50%;
 }
 
-.column-3 h2 {
+.col-3 h2 {
   text-align: left;
   padding-top: 50px;
   padding-left: 90px;
@@ -222,12 +226,12 @@ html {
   color: #ffdd00;
 }
 
-.column-4 {
+.col-4 {
   float: right;
   width: 50%;
 }
 
-.column-4 p {
+.col-4 p {
   text-align: left;
   padding-left: 120px;
   padding-top: 100px;
@@ -238,14 +242,14 @@ html {
   color: #f9f9f9;
 }
 
-.column-5 {
+.col-5 {
   float: left;
   width: 300px;
   /* height: 400px; */
   padding: 2px;
 }
 
-.column-6 {
+.col-6 {
   float: left;
   width: 30%;
   height: 400px;
@@ -253,7 +257,7 @@ html {
   padding-left: 80px;
 }
 
-.column-6 p {
+.col-6 p {
   text-align: left;
   font: normal normal 100 30px/50px Poppins;
   font-size: 20px;
@@ -261,7 +265,7 @@ html {
   color: #ffffff;
 }
 
-.column-6 h3 {
+.col-6 h3 {
   text-align: left;
   font: normal normal normal 30px/42px Poppins;
   font-size: 25px;
@@ -269,12 +273,12 @@ html {
   color: #ffdd00;
 }
 
-.column-7 {
+.col-7 {
   float: left;
   width: 70%;
 }
 
-.column-8 {
+.col-8 {
   float: left;
   width: 33.33%;
   margin-top: 130px;
@@ -282,7 +286,7 @@ html {
   height: 300px;
 }
 
-.column-6 h2 {
+.col-6 h2 {
   text-align: left;
   font: normal normal medium 77px/100px Poppins;
   font-size: 55px;
@@ -398,18 +402,13 @@ html {
   padding: 10px 20px;
 }
 
-/* .form-inline button:hover {
-  border-style: none;
-  border: 0px;
-} */
-
-.column-9 {
+.col-9 {
   float: left;
   width: 50%;
   text-align: left;
 }
 
-.column-9 input {
+.col-9 input {
   padding: 10px;
   width: 140px;
   background: #ffdd00 0% 0% no-repeat padding-box;
@@ -418,17 +417,17 @@ html {
   outline: none;
 }
 
-.column-10 {
+.col-10 {
   float: right;
   width: 50%;
 }
 
-.column-10 a {
+.col-10 a {
   align-items: center;
   text-align: left;
 }
 
-.column-10 ul li {
+.col-10 ul li {
   display: inline-block;
 }
 
@@ -453,9 +452,7 @@ html {
 
 .col-contact-2 {
   float: left;
-
   width: 50%;
-  /* height: 120px; */
 }
 
 .col-contact-2 p {
@@ -481,20 +478,8 @@ html {
 }
 
 @media screen and (max-width: 1000px) {
-  .column-1,
-  .column-2,
-  .column-3,
-  .column-4,
-  .column-5,
-  .column-6 {
+  [class*="col-"] {
     width: 100%;
     text-align: center;
   }
-  /* .column-5 {
-    width: 100%;
-  }
-
-  .column-8 {
-    width: 100%;
-  } */
 }
