@@ -13,22 +13,38 @@
 </head>
 
 <body>
+  <div class="row-nav topnav" id="topnav">
+    <!-- <nav> -->
+    <div class="logo">
+      <a href="index.html#menu">
+        <img src="images/logo2.png" alt="yim" style="height: 3rem" />Y.I.M.Corporation
+      </a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html#menu">Home</a></li>
+        <li><a href="index.html#service">Service</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <!-- </nav> -->
+  </div>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("topnav").style.top = "0";
+      } else {
+        document.getElementById("topnav").style.top = "-70px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+
   <section class="main-1" id="menu">
     <div>
-      <nav class="row topnav">
-        <div class="logo">
-          <a href="index.html#menu">
-            <img src="images/logo2.png" alt="yim" style="height: 3rem" />Y.I.M.Corporation
-          </a>
-        </div>
-        <div class="menu" id="myMenu">
-          <ul>
-            <li><a href="index.html#menu">Home</a></li>
-            <li><a href="index.html#service">Service</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
 
       <div class="row content-1">
         <div class="col-1">
@@ -164,7 +180,7 @@
   </section>
 
   <section id="contact">
-    <div class="container-1" style="background: #212121 0% 0% no-repeat padding-box;min-height: 720px;">
+    <div class="container-1" style="background: #212121 0% 0% no-repeat padding-box;">
       <div>
         <div class="card-contact">
           <h1>Contact Us</h1>
