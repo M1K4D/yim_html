@@ -34,8 +34,8 @@ html {
   background-color: #212121;
   padding: auto;
   position: fixed;
-  opacity: 1;
   transition: top 0.4s;
+  z-index: 1;
 }
 
 .menu {
@@ -50,7 +50,7 @@ html {
 
 .menu ul li {
   display: inline-block;
-  padding: 5px 10px 0px 15px;
+  padding: 5px 10px 5px 15px;
 }
 
 .menu ul li a {
@@ -72,6 +72,11 @@ html {
   border-radius: 15px;
   color: black;
 }
+
+.menu .icon {
+  display: none;
+}
+
 
 .logo {
   float: left;
@@ -490,7 +495,7 @@ html {
   color: #ffffff;
 }
 @media screen and (max-width: 900px) {
-  .menu,
+  /* .menu,
   .menu ul {
     width: 100%;
     float: left;
@@ -499,6 +504,17 @@ html {
   .menu ul li {
     width: 100%;
     text-align: center;
+  } */
+
+  .topnav li:not(:last-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    padding: 0px;
+    height: 18px;
+    float: right;
+    display: block;
   }
 }
 
