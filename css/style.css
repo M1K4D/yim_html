@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  min-width: fit-content;
+  /* width: fit-content; */
   font-family: "Poppins", sans-serif;
 }
 html {
@@ -27,74 +27,6 @@ html {
   clear: both;
 }
 
-.topnav {
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  background-color: #212121;
-  padding: auto;
-  position: fixed;
-  transition: top 0.4s;
-  z-index: 1;
-}
-
-.menu {
-  float: left;
-  width: 50%;
-}
-
-.menu ul {
-  float: right;
-  padding-right: 30px;
-}
-
-.menu ul li {
-  display: inline-block;
-  padding: 5px 10px 5px 15px;
-}
-
-.menu ul li a {
-  color: #f2f2f2;
-  text-align: right;
-  padding: 5px 15px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.menu ul li a:hover {
-  color: #ffdd00;
-}
-
-.menu ul li a.active {
-  width: 100%;
-  height: 100%;
-  background: #ffdd00 0% 0% no-repeat padding-box;
-  border-radius: 15px;
-  color: black;
-}
-
-.menu .icon {
-  display: none;
-}
-
-.logo {
-  float: left;
-  height: 100%;
-  width: 50%;
-  padding-top: 5px;
-  padding-left: 80px;
-}
-
-.logo a {
-  display: flex;
-  align-items: center;
-  text-align: left;
-  font: normal normal 550 20px/30px Poppins;
-  font-size: 30px;
-  text-decoration: none;
-  color: #ffffff;
-}
-
 .content-1 {
   align-self: center;
   max-width: 1600px;
@@ -104,12 +36,12 @@ html {
 .col-1 {
   float: left;
   width: 55%;
+  padding-top: 70px;
 }
 
 .col-1 ul {
-  max-width: 700px;
+  /* max-width: 700px; */
   padding-left: 80px;
-  padding-top: 70px;
 }
 
 .col-1 ul li {
@@ -134,7 +66,7 @@ html {
 .col-2 {
   float: left;
   width: 45%;
-  padding-top: 65px;
+  padding-top: 90px;
   height: 700px;
 }
 
@@ -347,7 +279,7 @@ html {
 }
 
 .row-1 {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .card-contact {
@@ -422,6 +354,7 @@ html {
   float: left;
   width: 50%;
   text-align: left;
+  padding-top: 4px;
   padding-right: 50px;
 }
 
@@ -436,17 +369,27 @@ html {
 
 .col-10 {
   float: right;
-  width: 50%;
-  padding-left: 100px;
+  display: flex;
+  /* padding-left: 20px; */
+  justify-content: right;
 }
 
-.col-10 a {
-  /* align-items: center; */
-  text-align: left;
+.col-10 ul {
+  width: 50%;
+  display: flex;
+  margin-left: 80px;
+  justify-content: center;
 }
 
 .col-10 ul li {
-  display: inline-block;
+  padding-right: 5px;
+  list-style: none;
+}
+
+.col-10 ul li a img {
+  height: 25px;
+  display: flex;
+  justify-content: right;
 }
 
 .col-contact-1 {
@@ -490,8 +433,7 @@ html {
   height: 100%;
   width: 100%;
   text-align: center;
-  font: normal normal 300 17px/20px Poppins;
-  letter-spacing: 0px;
+  font: normal normal 300 16px/22px Poppins;
   color: #ffffff;
 }
 
@@ -583,6 +525,19 @@ html {
   color: #ffdd00;
 }
 
+.icon-link-1 {
+  display: flex;
+  padding-top: 60px;
+}
+
+.icon-link-1 li {
+  padding: 5px;
+}
+
+.icon-link-1 li a img {
+  height: 30px;
+}
+
 @media screen and (max-width: 900px) {
   .nav-1 {
     padding: 5px 30px;
@@ -617,6 +572,10 @@ html {
     padding-left: 90px;
   }
 
+  .row-1 {
+    padding-bottom: 20px;
+  }
+
   .col-4 {
     padding-top: 20px;
     padding-left: 100px;
@@ -640,6 +599,7 @@ html {
 
   .col-10 {
     padding: 0px;
+    margin-top: 10px;
   }
 
   .col-10 ul {
