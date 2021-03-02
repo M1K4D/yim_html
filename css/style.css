@@ -77,7 +77,6 @@ html {
   display: none;
 }
 
-
 .logo {
   float: left;
   height: 100%;
@@ -495,17 +494,6 @@ html {
   color: #ffffff;
 }
 @media screen and (max-width: 900px) {
-  /* .menu,
-  .menu ul {
-    width: 100%;
-    float: left;
-    text-align: center;
-  }
-  .menu ul li {
-    width: 100%;
-    text-align: center;
-  } */
-
   .topnav li:not(:last-child) {
     display: none;
   }
@@ -515,6 +503,21 @@ html {
     height: 18px;
     float: right;
     display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive li {
+    float: none;
+    display: block;
+    text-align: right;
+    width: 100%;
   }
 }
 
