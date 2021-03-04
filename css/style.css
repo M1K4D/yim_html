@@ -709,6 +709,7 @@ html {
   .col-contact-2,
   .col-10 {
     width: 100%;
+    text-align: center;
   }
 
   .col-2 ul {
