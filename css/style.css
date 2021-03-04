@@ -37,7 +37,7 @@ html {
 .col-1 {
   float: left;
   width: 55%;
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 .col-1 ul {
@@ -172,7 +172,7 @@ html {
   text-align: left;
   padding-top: 50px;
   padding-left: 90px;
-  font: normal normal medium;
+  font: normal normal medium Poppins;
   font-size: 55px;
   letter-spacing: 0px;
   color: #ffdd00;
@@ -204,9 +204,8 @@ html {
 .col-6 {
   float: left;
   width: 30%;
-  height: 400px;
-  padding-top: 90px;
-  padding-left: 80px;
+  height: 100%;
+  padding: 90px 40px 0px 80px;
 }
 
 .col-6 p {
@@ -251,13 +250,12 @@ html {
   border-radius: 5px;
   background: #f9f9f9;
   text-align: center;
-  height: 300px;
+  height: 320px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     0.3s box-shadow,
     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
   padding: 36px;
-  /* cursor: pointer; */
 }
 
 .card:hover {
@@ -287,10 +285,11 @@ html {
 }
 
 .card-contact {
+  /* padding-top: 50px; */
   text-align: center;
   max-width: 600px;
   min-height: 500px;
-  background: #f8f8f8 0% 0% no-repeat padding-box;
+  background: #f8f8f8;
   border-radius: 10px;
   padding: 10px;
   margin: auto;
@@ -306,10 +305,11 @@ html {
 
 .row-con {
   width: 100%;
+  /* height: 100%; */
   margin-top: 135px;
-  display: inline-block;
-  padding: auto;
-  background: #f9f9f9 0% 0% no-repeat padding-box;
+  /* display: flex; */
+  background: #f9f9f9;
+  /* align-items: center; */
 }
 
 .form-inline {
@@ -399,12 +399,10 @@ html {
 .col-contact-1 {
   float: left;
   width: 50%;
-  padding: auto;
-  align-items: center;
+  /* flex: 1; */
 }
 
 .col-contact-1 a {
-  margin-top: 33px;
   margin-left: 80px;
   display: flex;
   align-items: center;
@@ -556,7 +554,11 @@ html {
   padding-right: 20px;
 }
 
-@media screen and (max-width: 300px) {
+.row-2 {
+  padding: 70px;
+}
+
+@media screen and (max-width: 320px) {
   .nav-1 ul {
     padding-inline-start: 0px;
   }
@@ -567,6 +569,14 @@ html {
 
   .form-inline input {
     margin: 5px 0px 5px 0px !important;
+  }
+
+  .row-2 {
+    padding: 30px;
+  }
+
+  .nav-1 ul li.item-1 {
+    padding-right: 0px !important;
   }
 }
 
@@ -603,6 +613,11 @@ html {
     margin-left: 80px;
   }
 
+  .col-1 ul {
+    padding-left: 0px;
+    padding-inline-start: 40px;
+  }
+
   .col-1 ul li h2 {
     font-size: 8vw;
   }
@@ -611,8 +626,25 @@ html {
     font-size: 6vw;
   }
 
+  .col-2 {
+    padding-top: 60px;
+  }
+
+  .col-2 ul {
+    padding-left: 40px !important;
+  }
+
   .col-3 h2 {
     font-size: 8vw;
+    padding-left: 40px;
+  }
+
+  .col-4 {
+    padding-left: 40px !important;
+  }
+
+  .col-6 {
+    padding: 90px 20px 0px 40px !important;
   }
 
   .col-6 h2 {
@@ -648,14 +680,35 @@ html {
   }
 }
 
+@media screen and (max-width: 750px) {
+  .col-8 {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .container-1 {
     min-height: unset;
   }
 
-  [class*="col-"] {
+  /* [class*="col-"] {
     width: 100%;
     text-align: center;
+  } */
+
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-9,
+  .col-c,
+  .col-contact-1,
+  .col-contact-2,
+  .col-10 {
+    width: 100%;
   }
 
   .col-2 ul {
@@ -664,6 +717,7 @@ html {
 
   .row-1 {
     padding-bottom: 20px;
+    width: 100%;
   }
 
   .col-4 {
@@ -671,12 +725,9 @@ html {
     padding-left: 100px;
   }
 
-  .col-7 {
-    margin-top: 150px;
-  }
-
   .col-8 {
     margin-top: 2px;
+    height: unset;
   }
 
   .card-contact {
