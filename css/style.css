@@ -233,7 +233,7 @@ html {
 .col-8 {
   float: left;
   width: 33.33%;
-  margin-top: 130px;
+  /* margin-top: 130px; */
   padding: 2px;
   height: 300px;
 }
@@ -255,7 +255,7 @@ html {
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     0.3s box-shadow,
     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-  padding: 36px;
+  padding: 30px;
 }
 
 .card:hover {
@@ -281,7 +281,10 @@ html {
 }
 
 .row-1 {
+  display: flex;
+  justify-content: center;
   padding-top: 50px;
+  width: 100%;
 }
 
 .card-contact {
@@ -398,7 +401,7 @@ html {
 
 .col-contact-1 {
   float: left;
-  width: 50%;
+  width: 70%;
   /* flex: 1; */
 }
 
@@ -421,7 +424,7 @@ html {
 
 .col-contact-2 {
   float: right;
-  width: 50%;
+  width: 30%;
 }
 
 .col-contact-2 p {
@@ -431,7 +434,6 @@ html {
   font-size: 12px;
   letter-spacing: 0px;
   color: #212121;
-  min-width: 340px;
 }
 
 .col-contact-2 p img {
@@ -556,12 +558,17 @@ html {
 }
 
 .row-2 {
-  padding: 70px;
+  padding: 240px 70px;
 }
 
 @media screen and (max-width: 320px) {
   .nav-1 ul {
     padding-inline-start: 0px;
+  }
+
+  .row-1 {
+    padding: 100px 0px 30px 0px !important;
+    width: 100%;
   }
 
   .form-inline label {
@@ -573,11 +580,30 @@ html {
   }
 
   .row-2 {
-    padding: 30px;
+    padding: 30px !important;
   }
 
   .nav-1 ul li.item-1 {
     padding-right: 0px !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .row-con {
+    display: block;
+  }
+
+  .col-contact-1 {
+    display: none;
+    /* padding-top: 10px; */
+  }
+
+  .col-contact-1 a {
+    margin-left: 40px;
+  }
+
+  .col-contact-2 p {
+    margin-left: 40px !important;
   }
 }
 
@@ -604,6 +630,10 @@ html {
 
   .col-contact-1 {
     width: 100%;
+  }
+
+  .col-contact-1 a {
+    margin-left: 40px;
   }
   .col-contact-2 {
     padding-top: 10px;
@@ -653,7 +683,7 @@ html {
   }
 
   .col-contact-1 a {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .col-contact-1 a img {
@@ -681,27 +711,39 @@ html {
   }
 }
 
-@media screen and (max-width: 750px) {
-  .col-8 {
+@media screen and (max-width: 1050px) {
+  .row-1 {
+    padding: 100px 40px 30px 40px;
     width: 100%;
+  }
+
+  .col-5,
+  .col-3 {
+    width: 100%;
+  }
+
+  .col-4 {
+    width: 100%;
+    padding-left: 100px;
+    padding-top: 50px;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   .container-1 {
     min-height: unset;
   }
 
-  /* [class*="col-"] {
-    width: 100%;
-    text-align: center;
-  } */
+  .row-1 {
+    padding-bottom: 30px;
+  }
+
+  .row-2 {
+    padding: 70px 70px;
+  }
 
   .col-1,
   .col-2,
-  .col-3,
-  .col-4,
-  .col-5,
   .col-6,
   .col-7,
   .col-9,
@@ -713,21 +755,6 @@ html {
 
   .col-2 ul {
     padding-left: 90px;
-  }
-
-  .row-1 {
-    padding-bottom: 20px;
-    width: 100%;
-  }
-
-  .col-4 {
-    padding-top: 20px;
-    padding-left: 100px;
-  }
-
-  .col-8 {
-    margin-top: 2px;
-    height: unset;
   }
 
   .card-contact {
@@ -746,5 +773,16 @@ html {
   .col-10 ul {
     padding-right: 40px;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .col-8 {
+    width: 100%;
+  }
+
+  .col-8 {
+    margin-top: 2px;
+    height: unset;
   }
 }
