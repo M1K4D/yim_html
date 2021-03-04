@@ -307,9 +307,9 @@ html {
   width: 100%;
   /* height: 100%; */
   margin-top: 135px;
-  /* display: flex; */
+  display: flex;
   background: #f9f9f9;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .form-inline {
@@ -420,17 +420,18 @@ html {
 }
 
 .col-contact-2 {
-  float: left;
+  float: right;
   width: 50%;
 }
 
 .col-contact-2 p {
-  margin-left: 250px;
+  /* margin-left: 250px; */
   text-align: left;
   font: normal normal 300 17px/17px Poppins;
   font-size: 12px;
   letter-spacing: 0px;
   color: #212121;
+  min-width: 340px;
 }
 
 .col-contact-2 p img {
@@ -705,8 +706,6 @@ html {
   .col-7,
   .col-9,
   .col-c,
-  .col-contact-1,
-  .col-contact-2,
   .col-10 {
     width: 100%;
     text-align: center;
