@@ -1,7 +1,9 @@
 body {
   margin: 0px;
-  width: fit-content;
+  padding: 0px;
+  /* width: fit-content; */
   font-family: "Poppins", sans-serif;
+  position: absolute;
 }
 html {
   scroll-behavior: smooth;
@@ -19,7 +21,8 @@ html {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  min-height: 700px;
+  height: 100%;
+  /* min-height: 700px; */
 }
 
 .row-nav:after {
@@ -154,10 +157,10 @@ html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: auto;
   background-position: center;
-  background-size: cover;
-  min-height: 800px;
+  height: 100%;
+  /* min-height: 800px; */
 }
 
 .col-3 {
@@ -194,7 +197,7 @@ html {
 .col-5 {
   float: left;
   width: 33.33%;
-  padding: 2px;
+  padding: 4px 2px;
 }
 
 .col-6 {
@@ -277,7 +280,7 @@ html {
 .row-1 {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding: 50px 0px 32px 0px;
   width: 100%;
 }
 
@@ -715,7 +718,12 @@ html {
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1020px) {
+  .col-1,
+  .col-2 {
+    width: 100%;
+  }
+
   .card-t {
     max-width: 85%;
   }
@@ -736,16 +744,14 @@ html {
     min-height: unset;
   }
 
-  .row-1 {
+  /* .row-1 {
     padding-bottom: 30px;
-  }
+  } */
 
   .row-2 {
     padding: 70px 50px;
   }
 
-  .col-1,
-  .col-2,
   .col-6,
   .col-7,
   .col-9,
